@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.4);
+      background-blend-mode: lighten;
+    }
+
+    .section-background {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .col-md-6 {
+      background-color: rgba(231, 231, 153, 0.7);
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    h2{
+      font-family: 'Chick', sans-serif;
+      color: rgb(19, 111, 116);
+      border: 2px;
+      font-size: 70px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    h5{
+      font-family: 'Chick', sans-serif;
+      font-size: 65px;
+      color: rgb(19, 111, 116);
+    }
+
+    p{
+      font-family: 'sn',sans-serif;
+      font-size: 20px;
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+
+  </style>
+  <script>
+    function bookServices() {
+      const checkedItems = [];
+
+      // Get checked services and experts for next page
+      const handsService1 = document.getElementById("handsService1");
+      if (handsService1.checked) {
+        checkedItems.push("Shellac Manicure");
+      }
+
+      const handsService2 = document.getElementById("handsService2");
+      if (handsService2.checked) {
+        checkedItems.push("Gel Manicure");
+      }
+
+      const handsService3 = document.getElementById("handsService3");
+      if (handsService3.checked) {
+        checkedItems.push("Spa Manicure");
+      }
+
+      const handsService4 = document.getElementById("handsService4");
+      if (handsService4.checked) {
+        checkedItems.push("Hand Nail Art");
+      }
+
+      const handsService5 = document.getElementById("handsService5");
+      if (handsService5.checked) {
+        checkedItems.push("Hand Nail Polish Removal");
+      }
+
+      const feetService1 = document.getElementById("feetService1");
+      if (feetService1.checked) {
+        checkedItems.push("Shellac Pedicure");
+      }
+
+      const feetService2 = document.getElementById("feetService2");
+      if (feetService2.checked) {
+        checkedItems.push("Gel Pedicure");
+      }
+
+      const feetService3 = document.getElementById("feetService3");
+      if (feetService3.checked) {
+        checkedItems.push("Spa Pedicure");
+      }
+
+      const feetService4 = document.getElementById("feetService4");
+      if (feetService4.checked) {
+        checkedItems.push("Feet Nail Art");
+      }
+
+      const feetService5 = document.getElementById("feetService5");
+      if (feetService5.checked) {
+        checkedItems.push("Feet Nail Polish Removal");
+      }
+
+      const nailExpert1 = document.getElementById("nailExpert1");
+      if (nailExpert1.checked) {
+        checkedItems.push("Jamie: Nail Artist");
+      }
+
+      const nailExpert2 = document.getElementById("nailExpert2");
+      if (nailExpert2.checked) {
+        checkedItems.push("Xavier: Nail Artist");
+      }
+
+      const nailExpert3 = document.getElementById("nailExpert3");
+      if (nailExpert3.checked) {
+        checkedItems.push("Daisy: Nail Artist");
+      }
+
+      const nailExpert4 = document.getElementById("nailExpert4");
+      if (nailExpert4.checked) {
+        checkedItems.push("Alex: Shellac and Gel Specialist");
+      }
+
+      const nailExpert5 = document.getElementById("nailExpert5");
+      if (nailExpert5.checked) {
+        checkedItems.push("Eva: Spa Specialist");
+      }
+
+      localStorage.setItem('checkedItems', JSON.stringify(checkedItems));
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="location-hours text-center">
+      <h4>Book a service</h4>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+      
+        <div class="col-md-6">
+          <h2>Hands</h2>
+          <form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handsService1">
+              <label class="form-check-label" for="handsService1">
+                <h3>Shellac Manicure  $45</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handsService2">
+              <label class="form-check-label" for="handsService2">
+                <h3>Gel Manicure  $55</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handsService3">
+              <label class="form-check-label" for="handsService3">
+                <h3>Spa Manicure  $50</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handsService4">
+              <label class="form-check-label" for="handsService4">
+                <h3>Nail Art  $50</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="handsService5">
+              <label class="form-check-label" for="handsService5">
+                <h3>Removal  $25</h3>
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Feet</h2>
+          <form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="feetService1">
+              <label class="form-check-label" for="feetService1">
+                <h3>Shellac Pedicure  $45</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="feetService2">
+              <label class="form-check-label" for="feetService2">
+                <h3>Gel Pedicure  $55</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="feetService3">
+              <label class="form-check-label" for="feetService3">
+                <h3>Spa Pedicure  $50</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="feetService4">
+              <label class="form-check-label" for="feetService4">
+                <h3>Nail Art  $50</h3>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="feetService5">
+              <label class="form-check-label" for="feetService5">
+                <h3>Removal  $25</h3>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+      <div class="col-md-6">
+      <h2>Nail Expert</h2>
+      <form>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="nailExpert1">
+          <label class="form-check-label" for="nailExpert1">
+            <h3>Jamie: Nail Artist</h3>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="nailExpert2">
+          <label class="form-check-label" for="nailExpert2">
+            <h3>Xavier: Nail Artist</h3>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="nailExpert3">
+          <label class="form-check-label" for="nailExpert3">
+            <h3>Daisy: Nail Artist</h3>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="nailExpert4">
+          <label class="form-check-label" for="nailExpert4">
+            <h3>Alex: Shellac and Gel Specialist</h3>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="nailExpert5">
+          <label class="form-check-label" for="nailExpert5">
+            <h3>Eva: Spa Specialist</h3>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+    </div>
+
+    <div class="text-end">
+      <a href="bookform.html" class="btn btn-primary btn-lg" onclick="bookServices()">Book Services and Nail Expert</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+

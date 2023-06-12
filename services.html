@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .accordion-item {
+      margin-bottom: 20px;
+    }
+
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255,255,255,0.4);
+      background-blend-mode: lighten;
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    h2{
+      font-family: 'Chick', sans-serif;
+      color: rgb(19, 111, 116);
+      border: 2px;
+      font-size: 70px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    p{
+      font-family: 'sn',sans-serif;
+      font-size: 20px;
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+
+    .accordion-item{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .accordion-button{
+      background-color: rgb(229, 198, 234);
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services -->
+<div class="container py-5">
+  <div class="row">
+    <h4 class="text-center">Services</h4>
+    <div class="col-md-6">
+      <img src="NYLON.jpg" alt="Image" class="img-fluid">
+    </div>
+
+    <!-- Hands Services -->
+    <div class="col-md-6">
+      <h2>Hands</h2>
+      <div class="accordion" id="accordionH">
+      
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h3>Shellac Manicure</h3>
+            </button>
+            <a href="#" class="btn btn-outline-success">$45</a>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionH">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>A long-lasting, chip-resistant manicure treatment that delivers a high-gloss finish for vibrant and durable nails.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="shellac.jpg" alt="Image for Section 1" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h3>Gel Manicure</h3>
+            </button>
+            <a href="#" class="btn btn-outline-success">$55</a>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionH">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Use gel-based polish to create a glossy, chip-resistant coating that provides weeks of impressive, professional looking nails.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="gelm.jpg" alt="Image for Section 2" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+     
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h3>Spa Manicure</h3>
+            </button>
+            <a href="#" class="btn btn-outline-success">$50</a>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionH">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>A luxurious nail treatment that combines expert care, relaxation, and rejuvenation, leaving your hands and nails pampered and revitalized.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="spam.jpg" alt="Image for Section 3" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h3>Nail art</h3>
+            </button>
+            <a href="#" class="btn btn-outline-success">$50</a>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionH">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>A creative and expressive way to enhance your nails, allowing you to showcase your individual style and personality through intricate designs, patterns, and colors. Choose an existing design or create your own!</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="artm.jpg" alt="Image for Section 4" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h3>Removal</h3>
+            </button>
+            <a href="#" class="btn btn-outline-success">$25</a>
+          </h3>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionH">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Effectively and gently removes old nail polish, ensuring a clean and fresh canvas for your next manicure or allowing your natural nails to shine on their own.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="removem.jpg" alt="Image for Section 5" style="max-width: 100%; height: auto;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feet Services -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-end">Feet</h2>
+          </div>
+        </div>
+        <div class="accordion" id="accordionF">
+        
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="fheadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fcollapseOne"
+                aria-expanded="true" aria-controls="fcollapseOne">
+                <h3>Shellac Pedicure</h3>
+              </button>
+              <a href="#" class="btn btn-outline-success">$45</a>
+            </h3>
+            <div id="fcollapseOne" class="accordion-collapse collapse show" aria-labelledby="fheadingOne"
+              data-bs-parent="#accordionF">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>A long-lasting, chip-resistant pedicure treatment that delivers a high-gloss finish for vibrant and durable nails.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="shellacp.jpg" alt="Image for Section 1" style="max-width: 100%; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="fheadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#fcollapseTwo" aria-expanded="false" aria-controls="fcollapseTwo">
+                <h3>Gel Pedicure</h3>
+              </button>
+              <a href="#" class="btn btn-outline-success">$55</a>
+            </h3>
+            <div id="fcollapseTwo" class="accordion-collapse collapse" aria-labelledby="fheadingTwo"
+              data-bs-parent="#accordionF">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Use gel-based polish to create a glossy, chip-resistant coating that provides weeks of impressive, professional looking nails.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="gelp.jpg" alt="Image for Section 2" style="max-width: 100%; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="fheadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#fcollapseThree" aria-expanded="false" aria-controls="fcollapseThree">
+                <h3>Spa Pedicure</h3>
+              </button>
+              <a href="#" class="btn btn-outline-success">$50</a>
+            </h3>
+            <div id="fcollapseThree" class="accordion-collapse collapse" aria-labelledby="fheadingThree"
+              data-bs-parent="#accordionF">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>A luxurious nail treatment that combines expert care, relaxation, and rejuvenation, leaving your feet and nails pampered and revitalized.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="spap.jpg" alt="Image for Section 3" style="max-width: 100%; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="fheadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#fcollapseFour" aria-expanded="false" aria-controls="fcollapseFour">
+                <h3>Nail art</h3>
+              </button>
+              <a href="#" class="btn btn-outline-success">$50</a>
+            </h3>
+            <div id="fcollapseFour" class="accordion-collapse collapse" aria-labelledby="fheadingFour"
+              data-bs-parent="#accordionF">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>A creative and expressive way to enhance your nails, allowing you to showcase your individual style and personality through intricate designs, patterns, and colors. Choose an existing design or create your own!</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="artp.jpg" alt="Image for Section 4" style="max-width: 100%; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+       
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="fheadingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#fcollapseFive" aria-expanded="false" aria-controls="fcollapseFive">
+                <h3>Removal</h3>
+              </button>
+              <a href="#" class="btn btn-outline-success">$25</a>
+            </h3>
+            <div id="fcollapseFive" class="accordion-collapse collapse" aria-labelledby="fheadingFive"
+              data-bs-parent="#accordionF">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Effectively and gently removes old nail polish, ensuring a clean and fresh canvas for your next pedicure or allowing your natural nails to shine on their own.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="removep.jpg" alt="Image for Section 5" style="max-width: 100%; height: auto;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+    
+</html>

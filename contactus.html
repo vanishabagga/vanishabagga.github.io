@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255,255,255,0.4);
+      background-blend-mode: lighten;
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    h2{
+      font-family: 'Chick', sans-serif;
+      color: rgb(19, 111, 116);
+      border: 2px;
+      font-size: 70px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    h5{
+      font-family: 'Chick', sans-serif;
+      font-size: 65px;
+      color: rgb(19, 111, 116);
+    }
+
+    label{
+      font-family: 'sn',sans-serif;
+      font-size: 25px;
+    }
+
+    strong{
+      font-family: 'sn',sans-serif;
+      font-size: 25px;
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+  </style>
+
+  <script>
+    function alertMessage() {
+      alert("Thank you! We will reply as soon as possible so check your email!");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+      padding: 50px;
+      border-radius: 10px;
+      background-color: rgba(93, 209, 215, 0.7)
+    }
+  
+    .contact-info h2 {
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .contact-info p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .contact-info img {
+      margin-right: 10px;
+    }
+
+    .get-intouch {
+      margin-top: 20px;
+      padding: 50px;
+      border-radius: 10px;
+      background-color: rgba(93, 209, 215, 0.7)
+    }
+  </style>
+  
+  <div class="container py-5">
+    <div class="row">
+      
+      <div class="col-md-6 contact-info">
+        <h4 class="mb-4">Contact Us</h4>
+      <p class="mb-3">
+        <img src="phone.png" alt="Phone Icon" class="me-n5" width="350" height="350">
+        <b>+1 123-456-7890</b>
+      </p>
+      <p class="mb-3">
+        <img src="ig.png" alt="Instagram Icon" class="me-n5" width="350" height="350">
+        <b>@polishplayground</b>
+      </p>
+      </div>
+
+      <div class="col-md-6 get-intouch">
+        <h4>Get in Touch</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" onclick="alertMessage()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

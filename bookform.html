@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <style>
+    .booking-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .booking-form .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .booking-form .form-group label {
+      font-weight: bold;
+    }
+    
+    .booking-form .submit-button {
+      margin-top: 1.5rem;
+    }
+    
+    .booking-form .title {
+      text-align: center;
+    }
+
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.45);
+      background-blend-mode: lighten;
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    h1.display-4 {
+      font-family: 'Chick', sans-serif;
+      font-size: 125px;
+      color: rgb(133, 55, 10);
+      transform: perspective(500px) rotateX(25deg);
+    }
+
+    h2{
+      font-family: 'Chick', sans-serif;
+      color: rgb(19, 111, 116);
+      border: 2px;
+      font-size: 70px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    h5{
+      font-family: 'Chick', sans-serif;
+      font-size: 65px;
+      color: rgb(19, 111, 116);
+    }
+
+    h6{
+      font-family: 'mr', sans-serif;
+      font-size: 40px;
+    }
+
+    p{
+      font-family: 'sn',sans-serif;
+      font-size: 20px;
+    }
+
+    label{
+      font-family: 'sn',sans-serif;
+      font-size: 20px;
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+      color: #000000A6;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+
+    .btn.btn-success{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(115, 182, 33);
+      border-color: rgb(133, 55, 10);
+    }
+
+    .booking-form .checked-items {
+      margin-top: 1.5rem;
+    }
+
+    .border{
+      background-color: rgb(229, 233, 225, 0.7);
+    }
+
+  </style>
+
+<script>
+  // get checked items from previous page to display on this page
+  function fillBookingForm() {
+    const checkedItems = JSON.parse(localStorage.getItem('checkedItems'));
+
+    if (checkedItems && checkedItems.length > 0) {
+      const servicesList = document.getElementById('servicesList');
+      servicesList.innerHTML = '';
+
+      for (const item of checkedItems) {
+        const li = document.createElement('li');
+        li.textContent = item;
+        servicesList.appendChild(li);
+      }
+    }
+  }
+</script>
+
+</head>
+
+<bod onload="fillBookingForm()">
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="text-center">
+      <h4>Almost finished booking!</h4>
+    </div>
+    <div class="container py-5">
+      <form class="booking-form" action="confirmation.html" method="GET">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="first-name">First Name:</label>
+              <input type="text" class="form-control" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" name="last-name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="datetime">Date:</label>
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control"/>
+                <span class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+                <label for="timepicker">Time:</label>
+                <div class="cs-form">
+                  <input type="time" class="form-control" value="10:05 AM" />
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+          <div class="booking-form">
+            <div class="border">
+              <h6>Selected Services and Expert:</h6>
+              <ul>
+                <script>
+                  const checkedItems = JSON.parse(localStorage.getItem('checkedItems'));
+        
+                  if (checkedItems) {
+                    checkedItems.forEach(item => {
+                      document.write('<li>' + item + '</li>');
+                    });
+                  }
+                </script>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <a href="bookservice.html" class="btn btn-success btn-lg">Change service and/or expert</a>
+              </div>
+              <div class="col-md-6 text-center">
+                <a href="confirmation.html" class="btn btn-primary btn-lg">Book Services and Nail Expert</a>
+              </div>
+
+            </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function() {
+        $('#datepicker').datepicker();
+    });
+</script>
+
+</body>
+</html>

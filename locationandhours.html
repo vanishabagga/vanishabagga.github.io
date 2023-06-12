@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location & Hours</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0.4);
+      background-blend-mode: lighten;
+    }
+
+    .col-md-6{
+      background-color: rgba(165, 96, 217, 0.7);
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    h2{
+      font-family: 'mr', sans-serif;
+      border: 2px;
+      font-size: 50px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+      color: white;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    h5{
+      font-family: 'Chick', sans-serif;
+      font-size: 65px;
+      color: rgb(9, 50, 52);
+    }
+
+    label{
+      font-family: 'sn',sans-serif;
+      font-size: 25px;
+    }
+
+    strong{
+      font-family: 'sn',sans-serif;
+      font-size: 25px;
+    }
+
+    p{
+      background-color: rgb(241, 237, 181,0.7);
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .location-hours {
+      margin-top: 40px;
+      padding: 50px;
+      border-radius: 10px;
+    }
+
+    .location-hours h2 {
+      margin-bottom: 30px;
+      font-size: 50px;
+    }
+
+    .location-hours h4 {
+      margin-top: 1px;
+      margin-bottom: 10px;
+    }
+
+    .location-hours p {
+      margin-bottom: 20px;
+    }
+
+    #map {
+      height: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<!-- Location and hours -->
+<body>
+  <div class="container py-5">
+    <div class="text-center">
+      <h4>Location & Hours</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="location-hours">
+          <h2 class="text-center">Our location</h2>
+          <h3 class="text-center">University of Ottawa, 75 Laurier Ave E, Ottawa, ON K1N 6N5, Canada</h3>
+          <h2 class="text-center">Our hours</h2>
+          <b><p class="text-center">Weekdays: 10:30 AM - 7:30 PM</p></b>
+          <b><p class="text-center">Weekends: 9:00 AM - 9:00 PM</p></b>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: { lat: 45.423869, lng: -75.682094 },
+              zoom: 15
+            });
+            var marker = new google.maps.Marker({
+              position: { lat: 45.423869, lng: -75.682094 },
+              map: map,
+              title: 'Polish Playground'
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async
+          defer>
+        </script>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

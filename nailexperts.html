@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nail experts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .carousel-item img {
+      max-height: 800px;
+      object-fit: cover;
+    }
+
+    .carousel {
+      background-color: rgba(239, 147, 94, 0.9);
+      width: 1000px;
+      height: 700px;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .carousel-indicators {
+      bottom: -50px;
+      justify-content: center; 
+    }
+    
+    .carousel-indicators .active {
+      background-color: black;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: auto;
+      bottom: -50px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+    
+    .carousel-pagination {
+      padding: 15px;
+      background-color: black;
+    }
+    
+    .carousel-pagination .carousel-page {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    
+    .carousel-pagination .carousel-page button {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+    }
+    
+    .carousel-pagination .carousel-page button.active {
+      background-color: red;
+    }
+
+    body {
+      background-image: url("pp_background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(255,255,255,0.4);
+      background-blend-mode: lighten;
+    }
+
+    @font-face {
+      font-family: 'Chick';
+      src: url('fonts/CHICK.TTF') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'sn';
+      src: url('fonts/sn.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'mr';
+      src: url('fonts/mr.ttf') format('truetype');
+    }
+
+    h2{
+      font-family: 'Chick', sans-serif;
+      color: rgb(19, 111, 116);
+      border: 2px;
+      font-size: 70px;
+    }
+
+    h3{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    h4{
+      font-family: 'mr', sans-serif;
+      font-size: 65px;
+    }
+
+    h5{
+      font-family: 'Chick', sans-serif;
+      font-size: 65px;
+      color: rgb(19, 111, 116);
+    }
+
+    p{
+      font-family: 'sn',sans-serif;
+      font-size: 20px;
+    }
+
+    .navbar-brand{
+      font-family: 'Chick', sans-serif;
+      font-size: 45px;
+      color: rgb(116, 68, 157);
+    }
+
+    .navbar.navbar-expand-lg{
+      background-color: rgb(241, 237, 181);
+    }
+
+    .nav-link{
+      font-family: 'mr', sans-serif;
+      font-size: 20px;
+    }
+
+    .btn.btn-primary{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+    }
+
+    a.page-link{
+      font-family: 'mr', sans-serif;
+      background-color: rgb(33, 175, 182);
+      border-color: rgb(133, 55, 10);
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Polish Playground</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nailexperts.html">Nail Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="locationandhours.html">Location & Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="bookservice.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nail Experts -->
+  <body>
+    <div class="container py-5">
+      <div class="text-center">
+        <h4>Nail Experts</h4>
+      </div>
+      <div id="carouselExpert" class="carousel slide">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Jamie's favourite nail art</h3>
+                  <img src="e1.jpg" alt="Image 1" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                  <div class="text-box">
+                    <h5>Jamie Hans</h5>
+                    <p>Welcome to my corner of creativity! I'm Jamie, a passionate nail artist at the salon, where I bring dreams to life, 
+                      one stroke at a time. With years of experience and a love for all things nails, I strive to create unique 
+                      and stunning designs that reflect each client's personality. The sky's the limit! </p>
+                    <span class="bi bi-instagram h4"></span> @jamiepaints</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Xavier's favourite nail art</h3>
+                  <img src="e2" alt="Image 2" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                  <div class="text-box">
+                    <h5>Xavier Salvadore</h5>
+                    <p>Welcome to my artistic haven! I'm Xavier, a visionary nail artist at the salon, where I transform 
+                      nails into exquisite canvases for my vibrant paintings. With a deep passion for merging art and beauty, 
+                      I channel my creativity onto each nail, crafting unique masterpieces that tell stories and evoke emotions. 
+                      Join me on this awe-inspiring journey as we explore the endless possibilities of turning your nails into 
+                      miniature works of art. Let's create something truly extraordinary together!</p>
+                    <span class="bi bi-instagram h4"></span> @canvasnails</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Spa specialist</h3>
+                  <img src="e3.jpg" alt="Image 3" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                  <div class="text-box">
+                    <h5>Eva Shumar</h5>
+                    <p>Welcome to a world of pampering and relaxation! I'm Eva, a dedicated spa specialist at the salon, where I focus on providing 
+                      luxurious and rejuvenating treatments for your hands and feet. With a passion for self-care and indulgence, I create personalized 
+                      experiences that nourish, revitalize, and enhance the natural beauty of your skin. Join me on a serene journey as we embark on a path of tranquility, 
+                      leaving you with hands and feet that feel blissfully pampered. Allow me to guide you to a state of ultimate serenity and let your worries melt away. Welcome to a 
+                      haven of pure relaxation and well-being!</p>
+                    <span class="bi bi-instagram h4"></span> @evaspa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Shellac and gel specialist</h3>
+                  <img src="e4.png" alt="Image 4" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                  <div class="text-box">
+                    <h5>Alex Cliffore</h5>
+                    <p>Welcome to the realm of flawless and long-lasting manicures! I'm Alex, a dedicated specialist in shellac and gel manicures at the salon. With a keen eye for detail and 
+                      a passion for precision, I strive to deliver stunning and durable nail art that withstands the test of time. Whether you desire a sleek and elegant look or a bold and vibrant 
+                      design, I'll bring your vision to life, ensuring your nails shine and impress. Join me on this transformative journey as we explore the world of vibrant colors, impeccable finishes, 
+                      and nails that truly make a statement. Get ready to indulge in a manicure experience like no other!.</p>
+                    <span class="bi bi-instagram h4"></span> @alexreddog</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Daisy's favourite nail art</h3>
+                  <img src="e5.jpg" alt="Image 5" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="col-md-6">
+                  <div class="text-box">
+                    <h5>Daisy Verena</h5>
+                    <p>Welcome to the world of captivating 3D nail art! I'm Daisy, a passionate specialist at the salon, dedicated to creating stunning three-dimensional designs for your nails. With a creative 
+                      touch and meticulous attention to detail, I bring your nails to life with cool shapes and mesmerizing patterns. Join me on this exciting journey as we explore the endless possibilities of 
+                      nail art, making your nails a unique and eye-catching expression of your style. Get ready to step into a world where creativity knows no bounds and your nails become true works of art!</p>
+                    <span class="bi bi-instagram h4"></span> @3dworld</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#carouselExpert" data-bs-slide="prev" aria-label="Previous">
+                <span aria-hidden="true">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-bs-target="#carouselExpert" data-bs-slide="next" aria-label="Next">
+                <span aria-hidden="true">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
+
+    
